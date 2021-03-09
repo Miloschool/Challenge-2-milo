@@ -16,6 +16,7 @@ nav {
 #navLogo {
     padding-top: 50px;
     height: 38px;
+    
     padding-left: 28px;
 }
 
@@ -60,3 +61,18 @@ nav {
 #dateShow{
     font-size: 34px;
 }
+
+#dayCyclus{
+    
+    animation: spinning 2s infinite linear;
+   
+}
+
+@keyframes spinning {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
