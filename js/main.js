@@ -14,7 +14,13 @@ function todayTime() {
     var s = getDateForTime.getSeconds();
     m = checkTime(m); // Tijden apart gemaakt voor checking time om 0 toe te voegen bij tijden met alleen 1 cijfer
     s = checkTime(s); // Tijden apart gemaakt voor checking time om 0 toe te voegen bij tijden met alleen 1 cijfer
+
+
+    //  INPUT HER DROPDOWN OPTION FOR TIMEZINE
+  
     var currentTime = h + ':' + m + ':' + s;
+    
+  
     document.getElementById('timeShow').innerHTML = currentTime;
 
     var swapForPlaceholder = document.getElementById('swapImagePlaceholder');

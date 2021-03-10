@@ -16,7 +16,6 @@ nav {
 #navLogo {
     padding-top: 50px;
     height: 38px;
-    
     padding-left: 28px;
 }
 
@@ -25,6 +24,19 @@ nav {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+
+.textOnlyArea{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.itemTextSelf{
+    padding: 10px;
 }
 
 
@@ -44,6 +56,7 @@ nav {
 
 #timeShow{
     font-weight: 900;
+    text-align: center;
     font-size: 40px;
     padding: 13px 30px 13px 30px;
     border-radius: 12px;
@@ -61,6 +74,12 @@ nav {
 #dateShow{
     font-size: 34px;
 }
+
+
+
+
+
+/* animation */
 .switchImage{
     animation: fullRotation 2s both;
 }
@@ -95,6 +114,32 @@ nav {
 
 
 
+/* Breakpoints */
 
 
+/* mobile */
+@media screen and (min-width: 325px) and (max-width: 699px) {
 
+  
+/* s */
+
+}
+
+/* Tablet */
+@media screen and (min-width: 670px) and (max-width: 768px) {
+
+    #dayCyclus{
+        width: 350px;
+    }
+    #timeShow{
+        width: 300px;
+    }    
+}
+
+
+/* Laptop > */
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+    /* CONTAINER COLUMN TO ROW */
+}
