@@ -17,28 +17,31 @@ function todayTime() {
     var currentTime = h + ':' + m + ':' + s;
     document.getElementById('timeShow').innerHTML = currentTime;
 
-    // var swapPlaceholder = document.getElementById('swap-placeholder');
+    var swapForPlaceholder = document.getElementById('swapImagePlaceholder');
     var visualDateImg = document.getElementById('dayCyclus');
 
- 
-    switch (true) { // Switch for image 
+       switch (true) { //  
         case s >= 0&& s <= 14:
-            // swapPlaceholder.classList.remove('switchImage');
-            // swapPlaceholder.classList.add('switchImage');
+            swapForPlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Morning.svg';
             break;
- 
-        case s >= 15&& s <= 29:
+        case s >= 16 && s <= 29:
+            swapForPlaceholder.classList.add('switchImage');
             visualDateImg.src =  'images/Day.svg';
             break;
-
-        case s >= 30&& s <= 44:
+        case s >= 31 && s <= 44:
+            swapForPlaceholder.classList.add('switchImage');
             visualDateImg.src =  'images/Evening.svg';
             break;
-        case  s >= 45&& s <= 60:
+        case  s >= 46&& s <= 60:
+            swapForPlaceholder.classList.add('switchImage');
             visualDateImg.src =  'images/Night.svg';
             break;
-    }
+        default:
+            swapForPlaceholder.classList.remove('switchImage');
+            break;
+
+    }   
     setTimeout(todayTime, 500);
 }
 

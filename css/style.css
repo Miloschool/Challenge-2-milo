@@ -61,19 +61,18 @@ nav {
 #dateShow{
     font-size: 34px;
 }
-/* .switchImage{
-   background-color: black;
-    animation: smallRotation 2s steps(1) infinite both;
- 
-
+.switchImage{
+    animation: fullRotation 2s both;
 }
 
-@keyframes smallRotation {
-    50% {
-        background-color: green;
+@keyframes fullRotation{
+    0% {
+        transform: rotate(360deg);
     }
-
-  } */
+    100%{
+        transform: rotate(0deg);
+    }
+  }
 
 
 #dayCyclus{
