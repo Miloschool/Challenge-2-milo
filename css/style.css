@@ -36,15 +36,15 @@ nav {
 
 
 #dayCyclus{
-    padding-top: 65px;
-    padding-bottom: 35px;
+    padding-top: 55px;
+    padding-bottom: 55px;
     width: 200px;
 }
 
 
 #timeShow{
     font-weight: 900;
-    font-size: 50px;
+    font-size: 40px;
     padding: 13px 30px 13px 30px;
     border-radius: 12px;
     background-color: #fff;
@@ -61,18 +61,41 @@ nav {
 #dateShow{
     font-size: 34px;
 }
+/* .switchImage{
+   background-color: black;
+    animation: smallRotation 2s steps(1) infinite both;
+ 
 
-#dayCyclus{
-    
-    animation: spinning 2s infinite linear;
-   
 }
 
-@keyframes spinning {
-    from {
-      transform: rotate(0deg);
+@keyframes smallRotation {
+    50% {
+        background-color: green;
     }
-    to {
-      transform: rotate(359deg);
+
+  } */
+
+
+#dayCyclus{
+    animation: swapRotate 6s infinite linear;
+  }
+
+  @keyframes swapRotate{
+    0% {
+      transform: rotate(15deg);
+    }
+    50%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(15deg);
     }
   }
+
+
+
+
+
+
+
+
