@@ -21,34 +21,60 @@ function todayTime() {
     } else {
         currentTime = h + ':' + m + ':' + s;
     }
-     document.getElementById('timeShow').innerHTML = currentTime;
-
-
+    document.getElementById('timeShow').innerHTML = currentTime;
 
     var swapForPlaceholder = document.getElementById('swapImagePlaceholder');
     var visualDateImg = document.getElementById('dayCyclus');
 
-    switch (true) { // check time
-        case s >= 0 && s <= 14:
+    switch (true) { // check which fase of the day it is
+        case (m >= 6 && s >= 0) && (h <= 11 && m <= 58): 
             swapForPlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Morning.svg';
             break;
-        case s >= 16 && s <= 29:
+        case (h >= 12 && m >= 0) && (h <= 17 && m <= 58): 
             swapForPlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Day.svg';
             break;
-        case s >= 31 && s <= 44:
+        case (h >= 18 && m >= 0) && (h >= 19 && m <= 58): 
             swapForPlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Evening.svg';
             break;
-        case s >= 46 && s <= 58:
+        case (h >= 20 && m >= 0) && (h <= 05 && m <= 58):  
             swapForPlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Night.svg';
             break;
         default:
             swapForPlaceholder.classList.remove('switchImage');
-            break;
+            break;  
     }
+
+
+// Voor docent: remove comment to test the fullRotation after each fase of the day! :D
+
+    // switch (true) { // check which fase of the day it is
+    //     case (s >= 0 && s <= 14) : 
+    //         swapForPlaceholder.classList.add('switchImage');
+    //         visualDateImg.src = 'images/Morning.svg';
+    //         break;
+    //     case (s >= 16 && s <= 29) : 
+    //         swapForPlaceholder.classList.add('switchImage');
+    //         visualDateImg.src = 'images/Day.svg';
+    //         break;
+    //     case (s >= 31 && s <= 44) : 
+    //           swapForPlaceholder.classList.add('switchImage');
+    //         visualDateImg.src = 'images/Evening.svg';
+    //         break;
+    //     case (s >= 46 && s <= 58) : 
+    //                  swapForPlaceholder.classList.add('switchImage');
+    //         visualDateImg.src = 'images/Night.svg';
+    //         break;
+    //     default:
+    //         swapForPlaceholder.classList.remove('switchImage');
+    //         break;  
+    // }
+
+
+
     setTimeout(todayTime, 500);
 }
 

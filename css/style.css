@@ -76,6 +76,9 @@ nav {
     font-size: 34px;
 }
 
+
+
+
 /* animation */
 .switchImage{
     animation: fullRotation 2s both;
@@ -113,24 +116,16 @@ nav {
 
 /* Breakpoints */
 
-
-
-
 /* Tablet */
-@media screen and (min-width: 670px) and (max-width: 768px) {
-
-    #dayCyclus{
-        width: 350px;
-    }
-    #timeShow{
-        width: 300px;
-    }    
+@media screen and (min-width: 670px) and (max-width: 767px) {
+    #dayCyclus{ width: 350px;}
+    #timeShow { width: 300px;}    
 }
 
 
 /* Laptop Small */
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1024px){
 
     #dayCyclus{
         width: 400px;
@@ -158,6 +153,7 @@ nav {
     #timeShow{
         width: 350px;
     }   
+
     .container{
         flex-direction: row;
     }
@@ -175,6 +171,7 @@ nav {
     #timeShow{
         width: 450px;
     }   
+
     .container{
         flex-direction: row;
     }
