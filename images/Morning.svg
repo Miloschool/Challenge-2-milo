@@ -1,23 +1,10 @@
-<svg width="711" height="711" viewBox="0 0 711 711" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d)">
-<circle cx="355.5" cy="349.5" r="348.5" fill="#9CC8FC"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M487.419 347.596C486.619 315.059 473.804 282.762 448.973 257.932C397.657 206.616 314.458 206.616 263.143 257.932C238.312 282.762 225.496 315.059 224.696 347.596H7.00509C7.0017 348.23 7 348.865 7 349.5C7 541.971 163.029 698 355.5 698C547.971 698 704 541.971 704 349.5C704 348.865 703.998 348.23 703.995 347.596H487.419Z" fill="#F5EF57"/>
-<rect x="182.578" y="203.837" width="22.8525" height="76.1749" transform="rotate(-45 182.578 203.837)" fill="#F5EF57"/>
-<rect x="342.169" y="122.88" width="22.8525" height="76.1749" fill="#F5EF57"/>
-<rect x="203.851" y="302.161" width="22.8525" height="76.1749" transform="rotate(98.8325 203.851 302.161)" fill="#F5EF57"/>
-<rect width="22.8525" height="76.1749" transform="matrix(0.153547 0.988141 0.988141 -0.153547 509.754 302.161)" fill="#F5EF57"/>
-<rect x="475.673" y="252.314" width="22.8525" height="76.1749" transform="rotate(-135 475.673 252.314)" fill="#F5EF57"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M703.75 362.831C696.743 549.124 543.508 698 355.5 698C167.492 698 14.2566 549.124 7.25024 362.831H703.75Z" fill="#75EA7A"/>
-</g>
-<defs>
-<filter id="filter0_d" x="0" y="0" width="711" height="711" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dy="6"/>
-<feGaussianBlur stdDeviation="3.5"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-</filter>
-</defs>
+<svg width="697" height="697" viewBox="0 0 697 697" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="348.5" cy="348.5" r="348.5" fill="#9CC8FC"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M480.419 346.596C479.619 314.059 466.804 281.762 441.973 256.932C390.657 205.616 307.458 205.616 256.143 256.932C231.312 281.762 218.496 314.059 217.696 346.596H0.00509369C0.00169933 347.23 0 347.865 0 348.5C0 540.971 156.029 697 348.5 697C540.971 697 697 540.971 697 348.5C697 347.865 696.998 347.23 696.995 346.596H480.419Z" fill="#F5EF57"/>
+<rect x="175.578" y="202.837" width="22.8525" height="76.1749" transform="rotate(-45 175.578 202.837)" fill="#F5EF57"/>
+<rect x="335.169" y="121.88" width="22.8525" height="76.1749" fill="#F5EF57"/>
+<rect x="196.851" y="301.161" width="22.8525" height="76.1749" transform="rotate(98.8325 196.851 301.161)" fill="#F5EF57"/>
+<rect width="22.8525" height="76.1749" transform="matrix(0.153547 0.988141 0.988141 -0.153547 502.754 301.161)" fill="#F5EF57"/>
+<rect x="468.673" y="251.314" width="22.8525" height="76.1749" transform="rotate(-135 468.673 251.314)" fill="#F5EF57"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M696.75 361.831C689.743 548.124 536.508 697 348.5 697C160.492 697 7.25655 548.124 0.250244 361.831H696.75Z" fill="#75EA7A"/>
 </svg>

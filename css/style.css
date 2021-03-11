@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: #F5F5F5;
+
 }
 
 nav {
@@ -117,13 +118,7 @@ nav {
 /* Breakpoints */
 
 
-/* mobile */
-@media screen and (min-width: 325px) and (max-width: 699px) {
 
-  
-/* s */
-
-}
 
 /* Tablet */
 @media screen and (min-width: 670px) and (max-width: 768px) {
@@ -137,9 +132,55 @@ nav {
 }
 
 
-/* Laptop > */
+/* Laptop Small */
 
 @media screen and (min-width: 769px) and (max-width: 1024px){
 
-    /* CONTAINER COLUMN TO ROW */
+    #dayCyclus{
+        width: 400px;
+    }
+
+    #timeShow{
+        width: 300px;
+    }   
+
+    .container{
+        flex-direction: row;
+    }
+ 
+}
+
+
+/* Laptop */
+
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+
+    #dayCyclus{
+        width: 500px;
+    }
+
+    #timeShow{
+        width: 350px;
+    }   
+    .container{
+        flex-direction: row;
+    }
+
+}
+
+/* laptop L */
+
+@media screen and (min-width: 1440px){
+
+    #dayCyclus{
+        width: 500px;
+    }
+
+    #timeShow{
+        width: 450px;
+    }   
+    .container{
+        flex-direction: row;
+    }
+  
 }
