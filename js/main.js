@@ -27,7 +27,7 @@ function todayTime() {
     var visualDateImg = document.getElementById('dayCyclus');
 
     switch (true) { // check which fase of the day it is
-        case (m >= 6 && s >= 0) && (h <= 11 && m <= 58): 
+        case (h >= 6 && m >= 0) && (h <= 11 && m <= 58): 
             swapForPlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Morning.svg';
             break;
@@ -35,11 +35,11 @@ function todayTime() {
             swapForPlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Day.svg';
             break;
-        case (h >= 18 && m >= 0) && (h >= 19 && m <= 58): 
+        case (h >= 18 && m >= 0) && (h <= 19 && m <= 58): 
             swapForPlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Evening.svg';
             break;
-        case (h >= 20 && m >= 0) && (h <= 05 && m <= 58):  
+        case (h >= 20 && m >= 0) && (h <= 19 && m <= 58):  
             swapForPlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Night.svg';
             break;
