@@ -39,11 +39,12 @@ function todayTime() {
             swapForPlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Evening.svg';
             break;
-        case (h >= 20 && m >= 0) && (h <= 19 && m <= 58):  
+        case (h >= 20 && m >= 0) && (h <= 21 && m <= 58):  
             swapForPlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Night.svg';
             break;
         default:
+            visualDateImg.src = 'images/broken.svg';
             swapForPlaceholder.classList.remove('switchImage');
             break;  
     }
