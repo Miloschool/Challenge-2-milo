@@ -12,8 +12,8 @@ function todayTime() {
     var h = getDateForTime.getHours();
     var m = getDateForTime.getMinutes();
     var s = getDateForTime.getSeconds();
-    m = checkTime(m); // Tijden apart gemaakt voor checking time om 0 toe te voegen bij tijden met alleen 1 cijfer
-    s = checkTime(s); // Tijden apart gemaakt voor checking time om 0 toe te voegen bij tijden met alleen 1 cijfer
+    m = checkTime(m); // Tijden apart gemaakt voor checking time om 0 toe te voegen bij tijden met alleen 1 digit
+    s = checkTime(s); // Tijden apart gemaakt voor checking time om 0 toe te voegen bij tijden met alleen 1 digit
 
     var currentTime;
     if (screen.width <= 425) { // Time placeholder width
@@ -21,6 +21,7 @@ function todayTime() {
     } else {
         currentTime = h + ':' + m + ':' + s;
     }
+
     document.getElementById('timeShow').innerHTML = currentTime;
 
     var swapImagePlaceholder = document.getElementById('swapImagePlaceholder');
@@ -80,9 +81,7 @@ function todayTime() {
     //         break;  
     // }
 
-
-
-    setTimeout(todayTime, 500);
+    setTimeout(todayTime, 500); //  0.5 seconden
 }
 
 todayTime();
