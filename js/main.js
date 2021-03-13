@@ -23,29 +23,35 @@ function todayTime() {
     }
     document.getElementById('timeShow').innerHTML = currentTime;
 
-    var swapForPlaceholder = document.getElementById('swapImagePlaceholder');
+    var swapImagePlaceholder = document.getElementById('swapImagePlaceholder');
     var visualDateImg = document.getElementById('dayCyclus');
 
+
+    // // Hours
+     var morning = (h >= 6 && m >= 0) && (h <= 11 && m <=59 && s <=58);
+     var afternoon = (h >= 12 && m >= 0) && (h <= 17 && m <= 59 && s<=58);
+     var evening = (h >= 18 && m >= 0 ) && (h <= 19 && m <= 59 && s<=58);
+     var night = (h >= 20 && m >= 0) && (h <= 21 && m <= 59 && s<=58);
+
     switch (true) { // check which fase of the day it is
-        case (h >= 6 && m >= 0) && (h <= 11 && m <= 58): 
-            swapForPlaceholder.classList.add('switchImage');
+        case morning: 
+        swapImagePlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Morning.svg';
             break;
-        case (h >= 12 && m >= 0) && (h <= 17 && m <= 58): 
-            swapForPlaceholder.classList.add('switchImage');
-            visualDateImg.src = 'images/Day.svg';
+        case afternoon: 
+        swapImagePlaceholder.classList.add('switchImage');
+            visualDateImg.src = 'images/Afternoon.svg';
             break;
-        case (h >= 18 && m >= 0) && (h <= 19 && m <= 58): 
-            swapForPlaceholder.classList.add('switchImage');
+        case evening: 
+        swapImagePlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Evening.svg';
             break;
-        case (h >= 20 && m >= 0) && (h <= 21 && m <= 58):  
-            swapForPlaceholder.classList.add('switchImage');
+        case night:  
+        swapImagePlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Night.svg';
             break;
         default:
-            visualDateImg.src = 'images/broken.svg';
-            swapForPlaceholder.classList.remove('switchImage');
+            swapImagePlaceholder.classList.remove('switchImage');
             break;  
     }
 
@@ -54,23 +60,23 @@ function todayTime() {
 
     // switch (true) { // check which fase of the day it is
     //     case (s >= 0 && s <= 14) : 
-    //         swapForPlaceholder.classList.add('switchImage');
+    //         swapImagePlaceholder.classList.add('switchImage');
     //         visualDateImg.src = 'images/Morning.svg';
     //         break;
     //     case (s >= 16 && s <= 29) : 
-    //         swapForPlaceholder.classList.add('switchImage');
-    //         visualDateImg.src = 'images/Day.svg';
+    //         swapImagePlaceholder.classList.add('switchImage');
+    //         visualDateImg.src = 'images/Afternoon.svg';
     //         break;
     //     case (s >= 31 && s <= 44) : 
-    //           swapForPlaceholder.classList.add('switchImage');
+    //           swapImagePlaceholder.classList.add('switchImage');
     //         visualDateImg.src = 'images/Evening.svg';
     //         break;
     //     case (s >= 46 && s <= 58) : 
-    //                  swapForPlaceholder.classList.add('switchImage');
+    //                  swapImagePlaceholder.classList.add('switchImage');
     //         visualDateImg.src = 'images/Night.svg';
     //         break;
     //     default:
-    //         swapForPlaceholder.classList.remove('switchImage');
+    //         swapImagePlaceholder.classList.remove('switchImage');
     //         break;  
     // }
 
