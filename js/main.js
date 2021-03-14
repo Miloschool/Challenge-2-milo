@@ -32,7 +32,7 @@ function todayTime() {
      var morning = (h >= 6 && m >= 0) && (h <= 11 && m <=59 && s <=58);
      var afternoon = (h >= 12 && m >= 0) && (h <= 17 && m <= 59 && s<=58);
      var evening = (h >= 18 && m >= 0 ) && (h <= 19 && m <= 59 && s<=58);
-     var night = (h >= 20 && m >= 0) && (h <= 21 && m <= 59 && s<=58);
+     var night = (h >= 20 && m >= 0) || (h <= 5 && m <= 59 && s<=58);
 
     switch (true) { // check which fase of the day it is
         case morning: 
