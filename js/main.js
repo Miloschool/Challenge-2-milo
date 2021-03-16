@@ -36,19 +36,19 @@ function todayTime() {
 
     switch (true) { // check which fase of the day it is
         case morning: 
-        swapImagePlaceholder.classList.add('switchImage');
+            swapImagePlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Morning.svg';
             break;
         case afternoon: 
-        swapImagePlaceholder.classList.add('switchImage');
+            swapImagePlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Afternoon.svg';
             break;
         case evening: 
-        swapImagePlaceholder.classList.add('switchImage');
+            swapImagePlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Evening.svg';
             break;
         case night:  
-        swapImagePlaceholder.classList.add('switchImage');
+            swapImagePlaceholder.classList.add('switchImage');
             visualDateImg.src = 'images/Night.svg';
             break;
         default:
